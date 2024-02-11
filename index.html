@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Rudraksh Profile</title>
+</head>
+<body onload="shownotes()">
+    <div class="main pa3">
+        <nav class="">
+            <div class="container flex justify-around">
+
+                <span id="logo" class="">CyberUV
+                    <!-- जय श्री राम -->
+                </span>
+                <div class="nav-links" id="test816">
+                    <a class="links" href="#">Home</a>
+                    <a class="links" href="website.html" >Websites</a>
+                    <a class="links" href="#" >About</a>
+                    <a class="links" href="#">Other</a>
+                    <div type="checkbox" name="darkMode" id="darkMode" onclick="dark()" >
+                         <div id="circle" ></div>
+                    </div>
+                </div>
+                <div class="ham" id="ham" onclick="navShow()">
+                    <span  class="ham-lines ham1"  id="ham1"></span>
+                    <span class="ham-lines ham3" id="ham2"></span>
+                    <span class="ham-lines ham2" id="ham3"></span>
+                </div>
+            </div>
+        </nav>
+       
+        <div class="sec1 mt6">
+            <div class="profile shadow-5 pa3">
+                <img src="https://i.pinimg.com/originals/1f/5a/2a/1f5a2a437db0f1b355243fccc827cf2c.jpg" alt="Some Error On Your Internet. Please Check Your Internet" class="bb profileImg">
+                <div class="profileInfo" id="RprofileInfo">
+                    <span class="lh-copy"><h1 class="">Hey, </h1>
+                        <h2 class="mt3">This is Rudraksh Yadav</h2>
+                        <h3 class="mt3 tr">I am persuing B.tech CSE in Cyber Security (honrs.) form JNU Jaipur </h3>
+                        <h3 class="mt3">Coding is My Hobby</h3>
+                        <h3 class="mt3"><marquee>😎😎I can Create Website For You😎😎</marquee></h3>
+                        
+                    </span>
+                </div>
+            </div>
+            <div class="notes mt4 flex flex-column justify-center items-center">
+                <h1>Notes</h1>
+                <textarea name="" placeholder="Here You Can write your Note, Ideas, Thoughts.. etc.. It will Save here Forever for You Until You have uninstall your browser. 😉😉" id="notes" cols="30" class="pa2 textarea ba" style="width: 90%;" rows="10"></textarea>
+                <button class="mt3 w4 h2 br4 outline-0 bn shadow-5  bg-inherit grow white-90" id="saveBtn" onclick="save()">Save</button>
+            </div>
+            </div>
+            <div class="sec2 w-100">
+                <h1 class="align-center justify-center flex items-center">Our Some Popular Websites</h1>
+             <div class="showCase flex justify-center flex-wrap">
+                <div class="webCase flex flex-wrap">
+                    <img src="img/openidea1.png" class=" webImg grow pointer" alt="">
+                     <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Open Idea</h3>
+                        <ul>
+                             <li>Ideas for Website</li>
+                             <li>Share Your Idea with JNU Community</li>
+                        </ul>
+                        <a target="_blank" href="websites/OpenIdea.html"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div> 
+                <div class="webCase flex flex-wrap">
+                    <img src="img/textreplacer.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Text Replacer</h3>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>Here You Can Replace the Text</li>
+                        </ul>
+                        <a target="_blank" href="websites/textReplacer.html"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+                <div class="webCase flex flex-wrap">
+                    <img src="img/dream Web.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Dream web</h3>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>A Public Chat Website</li>
+                        </ul>
+                        <a target="_blank" href="https://cyberuv.github.io/DreamWEB/"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+                 <div class="webCase flex flex-wrap">
+                    <img src="img/shop.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Accent Beverages</h3>
+                        <ul>
+                            <li>E-Commerce Website</li>
+                            <li>Website like Amazon, Flipkart</li>
+                        </ul>
+                        <a target="_blank" href="https://cyberuv.github.io/shop/"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+                <div class="webCase flex flex-wrap">
+                    <img src="img/Screenshot 2023-09-06 184349.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Instagarm Clone</h3>
+                        <ul>
+                            <li>Login Page</li>
+                            <li>Insta clone Just for Fun</li>
+                        </ul>
+                        <a target="_blank" href="https://cyberuv.github.io/instagarm/"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+                 <div class="webCase flex flex-wrap">
+                    <img src="img/accent.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Accent Beverages</h3>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>Personal Porfolio</li>
+                        </ul>
+                        <a target="_blank" href="https://cyberuv.github.io/accentsoda/"><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+                   <div class="webCase flex flex-wrap">
+                    <img src="img/dream Web.png" class=" webImg grow pointer" alt="">
+                    <div class="webInfo" id="webInfo">
+                        <h3 class="f3">PPT For Rekha Ma'am</h3>
+                        <ul>
+                            <li>Jhumpa Lhairi</li>
+                            <li>PowerPoint Presentation</li>
+                        </ul>
+                        <a target="_blank" href="https://www.mediafire.com/file/d0ml03mato6qggi/jhumpa_lara.pptx/file"><button class="grow shadow-5">Let's See</button></a>
+                       </div>
+                  </div>
+                 <div class="webCase flex flex-wrap">
+                    <img src="img/shop.png" class=" webImg grow pointer" alt="">
+                     <div class="webInfo" id="webInfo">
+                        <h3 class="f3">Jhumpa Lahiri</h3>
+                        <ul>
+                            <li>For Rakha Ma'am</li>
+                            <li>Direct Download the PPT</li>
+                        </ul>
+                        <a href="/jhumpa lara.pptx" download ><button class="grow shadow-5">Let's See</button></a>
+                    </div>
+                </div>
+
+<h6 style="color:#3b3b3b;">https://www.mediafire.com/file/d0ml03mato6qggi/jhumpa_lara.pptx/file</h6>
+                 
+
+
+
+
+
+
+
+
+                    
+             
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+   
+    <script src="firebase.js"></script>
+
+ 
+
+</body>
+</html>
